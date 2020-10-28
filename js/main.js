@@ -23,7 +23,7 @@ var html;
 var activeTabURL;
 var extractedText;
 var eventDates = [];
-var outputFormat = 'DD/MM/YYYY hh:mm A';
+var outputFormat = 'MMM DD, YYYY hh:mma';
 $(document).ready(function(){
     chrome.tabs.captureVisibleTab(function(screenshotUrl) {
         let image = document.getElementById('image');
