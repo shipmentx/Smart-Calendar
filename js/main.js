@@ -133,11 +133,11 @@ function openCreateEvent(i){
     if(dates.length == 1){
         var from = moment(dates[0],outputFormat).format("YYYYMMDDThhmmss");
         var to = moment(dates[0],outputFormat).add(1, 'hours').format("YYYYMMDDThhmmss");
-        return "https://www.google.com/calendar/render?action=TEMPLATE&text="+title+"&details="+details+"&dates="+from+"%"+to+"&ctz="+tz;
+        return "https://www.google.com/calendar/render?action=TEMPLATE&text="+title+"&details="+details+"&dates="+from+"/"+to+"&ctz="+tz;
     }else if(dates.length == 2){
         var from = moment(dates[0],outputFormat).format("YYYYMMDDThhmmss");
         var to = moment(dates[1],outputFormat).format("YYYYMMDDThhmmss");
-        return "https://www.google.com/calendar/render?action=TEMPLATE&text="+title+"&details="+details+"&dates="+from+"%"+to+"&ctz="+tz;
+        return "https://www.google.com/calendar/render?action=TEMPLATE&text="+title+"&details="+details+"&dates="+from+"/"+to+"&ctz="+tz;
     }else{
         return "https://www.google.com/calendar/render?action=TEMPLATE&text="+title;
     }
