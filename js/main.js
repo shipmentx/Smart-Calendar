@@ -101,7 +101,7 @@ function convertToDate(format,date){
         if(format[2] == 1){
             var stdFormat = 'MMMM DD,YYYY hh:mm A'
             var parts = date.split(/\W+/);
-            var from = parts[0]+" "+parts[1]+","+parts[3]+" 80:00 AM";
+            var from = parts[0]+" "+parts[1]+","+parts[3]+" 08:00 AM";
             var to = parts[0]+" "+parts[2]+","+parts[3]+" 05:00 PM";
             return [moment(from,stdFormat).format(outputFormat),moment(to,stdFormat).format(outputFormat)]
         }else if(format[2] == 2 || format[2] == 3){
