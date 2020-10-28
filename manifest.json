@@ -1,0 +1,31 @@
+{
+  "name": "Smart Calendar",
+  "version": "1.0",
+  "description": "Smart Calendar to easily detect and create available events in the webpage",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "24": "icons/icon_24.png",
+      "32": "icons/icon_32.png",
+      "64": "icons/icon_64.png",
+      "128": "icons/icon_128.png",
+      "512": "icons/icon.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon_16.png",
+    "24": "icons/icon_24.png",
+    "32": "icons/icon_32.png",
+    "64": "icons/icon_64.png",
+    "128": "icons/icon_128.png",
+    "512": "icons/icon.png"
+  },
+  "web_accessible_resources": [
+    "js/worker.min.js",
+    "js/tessearct-core.wasm.js",
+    "traineddata/*.traineddata.gz"
+  ],
+  "permissions": ["activeTab"]
+}

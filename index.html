@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tesseract.js Chrome Extension Example</title>
+	<script src="js/tesseract.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/moment.min.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<style type="text/css">
+		body {
+			width: 400px;
+			height: 300px;
+			padding: 8px;
+		}
+	</style>
+</head>
+<body>
+	<center><button id="start-btn">Execute OCR</button></center>
+	<img id="image" alt="" style="display: none;">
+	<div id="result" style="display: none">
+		<progress value="0" max="1" id="progress" style="width: 80%;margin-left: 10%;margin-right: 10%"></progress>
+		<div id="message" style="text-align: center;"></div>
+	</div>
+	<div id="output" style="display: none">
+
+		<table class="table table-hover table-striped" style="font-size: 12px;">
+			<thead>
+				<tr>
+					<th>Subject:</th>
+					<th id="subject"></th>
+				<tr>
+					<th>Date</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
