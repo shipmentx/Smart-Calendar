@@ -27,5 +27,5 @@
     "js/tessearct-core.wasm.js",
     "traineddata/*.traineddata.gz"
   ],
-  "permissions": ["activeTab","tabs","http://*/","https://*/"]
+  "permissions": ["activeTab","tabs","http://*/","https://*/","downloads"]
 }
